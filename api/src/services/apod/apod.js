@@ -1,8 +1,9 @@
 import fetch from 'node-fetch';
 
 export const getAPOD = async () => {
+  console.info(JSON.stringify(process.env));
   const response = await fetch(
-    `https://api.nasa.gov/planetary/apod?api_key=fM2nUwf3kG68KhRr8SVSXZgS4b9g3MmBHu5Dkeqv `
+    `https://api.nasa.gov/planetary/apod?api_key=${process.env.REDWOOD_ENV_APIKEY}`
   );
 
   const json = await response.json();

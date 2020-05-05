@@ -63,14 +63,10 @@
 }
 
 .apod-contain .detail-contain {
-  bottom: 0;
-  right: 0;
+  position: initial;
+  background-color: #000;
   max-width: initial;
   padding: 12px;
-}
-
-.apod-contain.video .detail-contain {
-  background-color: #000;
 }
 
 .apod-contain .detail-contain .title {
@@ -103,9 +99,6 @@
 }
 
 @media screen and (max-width: 667px) {
-  .apod-contain .detail-contain {
-    position: initial;
-  }
   .apod-contain .pic-label {
     background-color: black;
   }
