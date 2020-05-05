@@ -10,9 +10,6 @@
     "@redwoodjs/core": "^0.5.0",
     "netlify-plugin-prisma-provider": "^0.1.1"
   },
-  "eslintConfig": {
-    "extends": "@redwoodjs/eslint-config"
-  },
   "engines": {
     "node": ">=12",
     "yarn": ">=1.15"

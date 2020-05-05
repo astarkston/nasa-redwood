@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 3px solid #061f4a;
+}
+
+.header .logo {
+  height: 2rem;
+}
+
+.header .nav-link {
+  padding: 0 1rem;
+  line-height: 2rem;
+}

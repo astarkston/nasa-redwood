@@ -1,11 +1,13 @@
 # Redwood
->**HEADS UP:** RedwoodJS is _NOT_ ready for use in Production. It relies heavily on Prisma2, which is currently in testing with an expected production release coming soon. See status at ["Is Prisma2 Ready?"](https://isprisma2ready.com)
+
+> **HEADS UP:** RedwoodJS is _NOT_ ready for use in Production. It relies heavily on Prisma2, which is currently in testing with an expected production release coming soon. See status at ["Is Prisma2 Ready?"](https://isprisma2ready.com)
 
 ## Getting Started
+
 - [Redwoodjs.com](https://redwoodjs.com): home to all things RedwoodJS.
 - [Tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood): getting started and complete overview guide.
 - [Docs](https://redwoodjs.com/docs/introduction): using the Redwood Router, handling assets and files, list of command-line tools, and more.
-- [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.   
+- [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.
 
 ### Setup
 
@@ -40,3 +42,49 @@ yarn redwood db up
 This will read the schema definition in `api/prisma/schema.prisma` and generate a sqlite database in `api/prisma/dev.db`
 
 If you've made changes to the schema run `yarn redwood db save` to generate a migration, and `yarn redwood db up` to apply the migration/ generate a new ORM client.
+
+# REQUIREMENTS
+
+## Wireframes
+
+https://www.figma.com/file/YTQ5ULCM8RSnbcmYJsmNq1/Pep-see-Challenge-Wireframe?node-id=0%3A1
+
+## API Setup
+
+- Register with your NASA API (link in the wireframes)
+- Grab API key, secret, etc.
+
+## Requirements
+
+### Header
+
+- Must be able to see an icon in the top left corner that navigates to the home screen
+- Must be able to see navigation bar with three links: Picture of the Day
+
+### Routing
+
+- Set up 2 routes: Home / Root and Picture of the Day
+
+### Picture of the Day
+
+- Parse out API response from NASA for the picture of the day (description and link are in there)
+
+## BONUS
+
+### Header
+
+- Add two new routes: Space Facts and ISS Location
+
+### Footer
+
+- Must be able to see NASA's Facebook and Twitter Icons that link to each social page
+
+### Space Facts
+
+- See link in wireframes
+- Static data, but feel free to build out as you see fit
+
+### ISS Location
+
+- See link in wireframes
+- Hit the API, display latitude / longitude
